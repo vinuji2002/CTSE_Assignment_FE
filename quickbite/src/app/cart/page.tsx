@@ -104,6 +104,7 @@ export default function CartPage() {
       clearCart();
       setIsOrdered(true);
       addNotification('Order placed successfully!', 'success');
+      addNotification('Receipt has been sent to your email!', 'success');
     } catch (error: any) {
       const message =
         error?.response?.data?.message ||
